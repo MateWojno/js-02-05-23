@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// let sum = (a, b) => a + b;
+
+// example above is the same as
+
+// let sum = function(a,b) {
+//     return a + b;
+// }
+
+// let double = n => n * 2; 
+
+// only one argument, so parenthesis are omitted;
+
+// arrow function without argument must have empty parenthesis
+
+// let sayHi = () =>  alert("Hello!");
+
+// sayHi();
+
+
+// let age = prompt("What is your are?", 18);
+
+// let welcome = (age < 18) ?
+//     () => alert('Hello!') :
+//     () => alert("Greetings!");
+
+// welcome();
+
+// let sum = (a,b) => {
+//     let result = a + b;
+//     return result;
+// };
+
+// alert(sum(1,2));
+
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  () => { alert("You agreed."); },
+  () => { alert("You canceled the execution."); }
+);
+
+
+// arrow function exercise
+    </script>
+</body>
+</html>
