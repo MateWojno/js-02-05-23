@@ -9,9 +9,14 @@
 <body>
     <script>
         // fizz buzz problem
-     
+        // set counter to 1 and increment it using for loop
+        // if num % 3 == 0 && num % 5 == 0 FIZZ BUZZ
+        // if num % 3 == 0 write fizz
+        // num % 5 == 0 write buzz 
+        // return fizz, buzz, fizzbuzz or num as output in each line
 
-        function fizzBuzz(num) {
+        function fizzBuzz() {
+            let num = parseInt(prompt("Give me num: "))
             for (let i = 1; i <= num; i++) {
                 if (i % 3 == 0 && i % 5 == 0) {
                     console.log("fizz buzz");
@@ -25,14 +30,9 @@
             }    
         }
     
-
+fizzBuzz();
         
-console.log(fizzBuzz(prompt("Give me num: ")));
-        // set counter to 0 and increment it using for loop
-         // if num % 3 == 0 && num % 5 == 0 FIZZ BUZZ
-        // if num % 3 == 0 write fizz
-        // num % 5 == 0 write buzz 
-        // return fizz, buzz, fizzbuzz or num as output in each line
+        
 
     </script>
 </body>
